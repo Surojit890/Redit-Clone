@@ -1,0 +1,22 @@
+{
+  "name": "redit",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "env": "^0.0.2",
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1",
+    "handlebars": "^4.7.8",
+    "hbs": "^4.2.0",
+    "mongoose": "^8.8.1"
+  }
+}
