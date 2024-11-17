@@ -15,6 +15,7 @@ router.post('/',async (req, res) => {
         if(!user){
             res.status(200).send('Invalid Credentials');
         }
+        global.email = user.email;
         res.redirect('/home');
     } catch(err){
         res.status(500).send('Error logging in');
