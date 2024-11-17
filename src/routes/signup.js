@@ -4,7 +4,7 @@ const path = require('path');
 const User = require('../models/user');
 
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/signup/signup.html'));
+    res.sendFile(path.join(__dirname, '../../public/signup.html'));
 });
 
 router.post('/', async (req, res) => {
