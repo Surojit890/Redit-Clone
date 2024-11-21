@@ -2,8 +2,6 @@ const express = require('express');
 const router = express.Router();
 const post = require('../models/post');
 
-// Sample data to be rendered dynamically
-
 router.get('/', async(req, res) => {
     try{
         const posts = await post.find();

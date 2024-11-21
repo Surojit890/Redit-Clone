@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 require('./src/config/db.js');
+app.use(express.static('../public/'));
 
 app.set('views', path.join(__dirname, 'views'));
 const loginRoutes = require('./src/routes/login.js');
