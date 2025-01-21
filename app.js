@@ -17,7 +17,6 @@ app.use(express.urlencoded({ extended: true }));
 // Set up Handlebars
 app.set('view engine', 'hbs');
 
-// Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('uploads', express.static(path.join(__dirname,'uploads')));
@@ -29,6 +28,6 @@ app.use('/upload', uploadRoutes);
 app.use('/mypost', mypostsRoutes);
 
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port ${port} - ${"http://localhost:3000/login"}`);
 });
 
