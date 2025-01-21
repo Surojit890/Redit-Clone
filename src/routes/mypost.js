@@ -5,7 +5,7 @@ const post = require('../models/post');
 router.get('/', async(req, res) => {
     try{
         const posts = await post.find();
-        res.render('home', { posts });
+        res.render('mypost', { posts });
     }
     catch(err){
         res.status(500).send('Error fetching posts');
